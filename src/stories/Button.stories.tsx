@@ -1,7 +1,6 @@
-import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
-import { Button } from './Button';
+import  Button from '../components/Button/Button';
 
 export default {
   title: 'Example/Button',
@@ -15,23 +14,26 @@ const Template: ComponentStory<typeof Button> = (args) => <Button {...args} />;
 
 export const Primary = Template.bind({});
 Primary.args = {
-  primary: true,
-  label: 'Button',
+  variant: 'primary',
+  label: 'Resetar Senha',
 };
 
-export const Secondary = Template.bind({});
-Secondary.args = {
-  label: 'Button',
+export const Danger = Template.bind({});
+Danger.args = {
+  variant: 'danger',
+  label: 'Resetar Senha',
 };
 
-export const Large = Template.bind({});
-Large.args = {
-  size: 'large',
-  label: 'Button',
+export const Text = Template.bind({});
+Text.args = {
+  variant: 'text',
+  label: 'Resetar Senha',
 };
 
-export const Small = Template.bind({});
-Small.args = {
-  size: 'small',
-  label: 'Button',
+export const Disabled = Template.bind({});
+Disabled.args = {
+  variant: 'primary',
+  disabled: true,
+  label: 'Resetar Senha',
 };
+

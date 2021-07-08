@@ -1,0 +1,11 @@
+npm install --global yarn
+
+yarn create react-app clinews-cms --template typescript
+
+cd clinews-cms
+npx sb init
+
+
+yarn storybook
+
+yarn add styled-components && yarn add -D @types/styled-components
